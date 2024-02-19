@@ -1,0 +1,32 @@
+html,
+body {
+  width: 100px;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  border: none;
+  width: 100%;
+  margin: 3% auto;
+  padding: 4px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #b5e916;
+}
+
+button:hover {
+  background-color: #5dab06;
+}
+
+button[type="reset"] {
+  background-color: #b5e916;
+}
+
+button[type="reset"]:hover {
+  background-color: #5dab06;
+}
