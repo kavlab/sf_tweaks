@@ -19,28 +19,30 @@
         ul = nav.querySelector('ul');
         }
         if (ul) {
-        let liElements = ul.getElementsByTagName('li');
-        for (let i = 0; i < liElements.length; i++) {
-            let textElement = liElements[i].querySelector('span');
-            if (textElement) {
-                switch (button_text) {
-                    case "Hide 1 semester": 
-                        if (textElement.textContent.startsWith('I.')
-                            || textElement.textContent.startsWith('Адаптационный')
-                            || textElement.textContent.startsWith('Выравнивающий')) {
-                            liElements[i].style.display = 'none';
-                        }
-                        break
-                    case "Hide 2 semester": 
-                        if (textElement.textContent.startsWith('II.')) {
-                            liElements[i].style.display = 'none';
-                        }
-                        break
-                    case "Reset": 
-                        liElements[i].style.display = 'flex';
+            let liElements = ul.getElementsByTagName('li');
+            for (let i = 0; i < liElements.length; i++) {
+                let textElement = liElements[i].querySelector('span');
+                if (textElement) {
+                    liElements[i].style.padding = "10px 4px";
+                    switch (button_text) {
+                        case "Hide 1 semester": 
+                            if (textElement.textContent.startsWith('I.')
+                                || textElement.textContent.startsWith('Адаптационный')
+                                || textElement.textContent.startsWith('Выравнивающий')) {
+                                liElements[i].style.display = 'none';
+                            }
+                            break
+                        case "Hide 2 semester": 
+                            if (textElement.textContent.startsWith('II.')) {
+                                liElements[i].style.display = 'none';
+                            }
+                            break
+                        case "Reset": 
+                            liElements[i].style.display = 'flex';
+                            liElements[i].style.padding = "28px 24px";
+                    }
                 }
             }
-        }
         }
     }
   

@@ -1,18 +1,20 @@
 {
-    "manifest_version": 2,
-    "name": "SkillFactory UrFU ML 23-25",
-    "version": "0.1",
-  
-    "description": "This add-on tweaks the SkillFactory home page",
-  
-    "icons": {
-      "48": "icons/urfuml-48.png"
-    },
-
-    "permissions": ["https://apps.skillfactory.ru/learning/course/course-v1:Skillfactory+URFUML2023+SEP2023/home", "activeTab"],
-
-    "browser_action": {
-        "default_title": "SF",
-        "default_popup": "popup/sf_tweaks.html"
+  "manifest_version": 2,
+  "name": "SkillFactory UrFU ML 23-25",
+  "version": "0.2",
+  "description": "This add-on tweaks the SkillFactory home page",
+  "icons": {
+    "48": "icons/urfuml-48.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{992c20fc-5aec-47de-afb3-ce85e78ab68d}",
+      "update_url": "https://raw.githubusercontent.com/kavlab/updates/main/skillfactory_urfu_ml_23_25/updates.json"
     }
+  },
+  "permissions": ["https://apps.skillfactory.ru/learning/course/course-v1:Skillfactory+URFUML2023+SEP2023/home", "activeTab"],
+  "browser_action": {
+      "default_title": "SF",
+      "default_popup": "popup/sf_tweaks.html"
+  }
 }
