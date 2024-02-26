@@ -9,7 +9,7 @@ function listenForClicks() {
         */
         function correct_page(tabs) {
             browser.tabs.sendMessage(tabs[0].id, {
-                command: e.target.textContent
+                command: e.target.id
             });
         }
 
