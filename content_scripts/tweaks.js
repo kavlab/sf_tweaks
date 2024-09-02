@@ -79,12 +79,8 @@
                             case "1":
                                 if (textElement.textContent.startsWith('I.')
                                     || textElement.textContent.startsWith('Адаптационный')
-                                    || textElement.textContent.startsWith('Выравнивающий')) {
-                                    liElements[i].style.display = 'none';
-                                }
-                                break
-                            case "2":
-                                if (textElement.textContent.startsWith('II.')) {
+                                    || textElement.textContent.startsWith('Выравнивающий')
+                                    || textElement.textContent.startsWith('II.')) {
                                     liElements[i].style.display = 'none';
                                 }
                                 break

@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "SkillFactory UrFU ML 23-25",
-  "version": "0.3",
+  "version": "0.4",
   "description": "This add-on tweaks the SkillFactory home page",
   "icons": {
     "48": "icons/urfuml-48.png"
